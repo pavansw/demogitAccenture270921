@@ -1,0 +1,8 @@
+---
+ - name: Play for testing deployment
+   hosts: all
+   tasks: 
+     - name: Create a directory /tmp/sampledata
+       file:
+          name: /tmp/sampledata
+          state: directory
